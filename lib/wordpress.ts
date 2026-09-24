@@ -81,10 +81,6 @@ export async function getLatestPosts(count = 6): Promise<WPPost[]> {
 
 /* ---------------------------------------------------------------- media */
 
-export async function getMedia(id: number): Promise<WPMedia | null> {
-  return wpFetch<WPMedia>(api(`/media/${id}`));
-}
-
 export async function getMediaByIds(ids: number[]): Promise<Map<number, WPMedia>> {
   if (ids.length === 0) return new Map();
   const media = await wpFetch<WPMedia[]>(api(`/media?include=${ids.join(",")}&per_page=${ids.length}`));

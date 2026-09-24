@@ -121,7 +121,7 @@ export const KEYWORD_EXCLUDE_SLUGS = new Set([
   "dr-himanshu-gupta",
 ]);
 
-/** Facility icon grid (UI labels; icons live in components/ui/icons.tsx). */
+/** Facility icon grid (UI labels; icons are mapped in components/sections/WhyAmicare.tsx). */
 export const FACILITIES = [
   { icon: "emergency", label: "24x7 Emergency" },
   { icon: "icu", label: "ICU / MICU / CCU" },

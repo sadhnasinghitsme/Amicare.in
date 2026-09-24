@@ -62,6 +62,3 @@ export function toPlainText(html: string | undefined | null): string {
     .replace(/\s+/g, " ") // \s also covers &nbsp; (U+00A0)
     .trim();
 }
-
-/** Decodes a WP `title.rendered` value. */
-export const decodeTitle = toPlainText;
