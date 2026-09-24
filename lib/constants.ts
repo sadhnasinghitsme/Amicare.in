@@ -137,6 +137,21 @@ export const FACILITIES = [
 export type FacilityIcon = (typeof FACILITIES)[number]["icon"];
 
 /**
+ * Patient-story YouTube Shorts shown after the testimonials, in display
+ * order. Titles are fetched from YouTube. Add or remove IDs here
+ * (the 11 characters after /shorts/ in the share link).
+ */
+export const PATIENT_SHORT_IDS = [
+  "5gcz6rzoQbY", // Real Stories. Real Recovery. | Patient Testimonial
+  "q8VVrXqzdGs", // Advanced Muscle Testing for ACL Recovery
+  "XAIfSYphPqg", // Mrs Meenu's knee recovery
+  "Cli_KfSlNz4", // 78-year-old grandmother, elbow fracture
+  "MxG8zT9JQyY", // Manshi Tomar, knee dislocation
+  "A-JpX6OccPk", // Hardik's ACL recovery
+  "hxnjUIbG3tE", // Mrs. Alka's knee replacement
+];
+
+/**
  * Video for the "Why AmiCare" section, from AmiCare's official YouTube
  * channel (youtube.com/@AmicareHospital-ortho): "10 Years of Orthopaedic
  * Excellence & Innovation". Override with WHY_AMICARE_YOUTUBE_ID.

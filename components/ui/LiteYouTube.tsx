@@ -17,9 +17,12 @@ export function LiteYouTube({
   highRes = false,
   showTitle = true,
   playButton = "round",
+  portrait = false,
 }: {
   /** "youtube" = red rounded-rectangle button, like YouTube's own player. */
   playButton?: "round" | "youtube";
+  /** 9:16 frame with the vertical thumbnail, for YouTube Shorts. */
+  portrait?: boolean;
   id: string;
   title: string;
   className?: string;
@@ -28,10 +31,12 @@ export function LiteYouTube({
   showTitle?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
-  const [thumb, setThumb] = useState(`https://i.ytimg.com/vi/${id}/${highRes ? "maxresdefault" : "hqdefault"}.jpg`);
+  // Shorts have a tall "oar2" thumbnail; landscape videos use hq / maxres.
+  const initialThumb = portrait ? "oar2" : highRes ? "maxresdefault" : "hqdefault";
+  const [thumb, setThumb] = useState(`https://i.ytimg.com/vi/${id}/${initialThumb}.jpg`);
 
   return (
-    <div className={cn("relative aspect-video overflow-hidden bg-brand-950", className)}>
+    <div className={cn("relative overflow-hidden bg-brand-950", portrait ? "aspect-[9/16]" : "aspect-video", className)}>
       {playing ? (
         <iframe
           src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`}

@@ -8,6 +8,7 @@ import { WhyAmicare } from "@/components/sections/WhyAmicare";
 import { Videos } from "@/components/sections/Videos";
 import { Technology } from "@/components/sections/Technology";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { PatientVideos } from "@/components/sections/PatientVideos";
 import { LatestArticles } from "@/components/sections/LatestArticles";
 import { TrustStrip } from "@/components/sections/TrustStrip";
 import { CTA } from "@/components/sections/CTA";
@@ -57,6 +58,7 @@ export default async function Home() {
         <WhyAmicare why={content.why} stats={stats} />
         <Videos stories={content.stories} />
         <Testimonials />
+        <PatientVideos />
         <Technology tabs={content.technology} videos={{ robotic: content.roboticVideo }} />
         <LatestArticles articles={content.articles} blogUrl={`${site.url}/our-blogs/`} />
         <TrustStrip trust={content.trust} />
