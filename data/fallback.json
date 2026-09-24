@@ -1,0 +1,783 @@
+{
+  "site": {
+    "name": "Amicare Hospital",
+    "url": "https://amicarehospital.in"
+  },
+  "seo": {
+    "title": "Amicare Hospital | Best Orthopedic Hospital in Ghaziabad | Expert Bone & Joint Care",
+    "description": "Over 1500+ robotic joint replacements in just two years — AmiCare Hospital leads in advanced orthopaedic care, blending cutting-edge technology with expert surgeons to restore mobility and ensure faster healing.",
+    "ogImage": "https://amicarehospital.in/wp-content/uploads/2025/05/DSC05197-2048x1153.jpg"
+  },
+  "hero": {
+    "eyebrow": "#1 Orthopedic Hospital Delivering Modern Healthcare Services",
+    "title": "Best Orthopedic Hospital in Ghaziabad",
+    "subtitle": "The Only Centre Dedicated to Robotic Surgery",
+    "description": "Over 1500+ robotic joint replacements in just two years — AmiCare Hospital leads in advanced orthopaedic care, blending cutting-edge technology with expert surgeons to restore mobility and ensure faster healing.",
+    "image": {
+      "src": "https://amicarehospital.in/wp-content/uploads/2025/05/DSC05197-2048x1153.jpg",
+      "alt": "Best Hospital in Ghaziabad",
+      "width": 2048,
+      "height": 1153
+    },
+    "badges": [
+      {
+        "value": "1500+",
+        "label": "Robotic Joint Replacements"
+      },
+      {
+        "value": "10+",
+        "label": "Years Experience"
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "20,000+",
+      "label": "Happy Patients"
+    },
+    {
+      "value": "2,500+",
+      "label": "Arthroscopic Surgeries"
+    },
+    {
+      "value": "800+",
+      "label": "Robotic Joint Replacement"
+    },
+    {
+      "value": "99%",
+      "label": "Patient Satisfaction"
+    }
+  ],
+  "treatments": [
+    {
+      "slug": "robotic-knee-replacement-surgery-in-ghaziabad",
+      "title": "Robotic Knee Replacement Surgery",
+      "summaryHtml": "<p>Are you living with constant knee pain that makes it difficult to walk, climb stairs, or enjoy daily life? If medicines and physiotherapy are no longer helping, robotic knee replacement surgery could be the life-changing solution you have been looking for. At Amicare Hospital in Ghaziabad, we combine cutting-edge robotic technology with decades of surgical expertise to deliver precise, safe, and long-lasting knee replacement outcomes.</p><p>Our team is led by Dr. Himanshu Gupta, one of the most experienced joint replacement surgeons in the NCR region, with over 25 years of dedicated practice in orthopaedic surgery. Whether you are seeking robotic total knee replacement surgery for the first time or looking for a trusted second opinion, Amicare Hospital is here to guide you every step of the way.</p>",
+      "highlights": [
+        "Higher precision and accuracy during implant placement",
+        "Personalised surgical planning based on 3D imaging",
+        "Better alignment of the knee joint",
+        "Reduced risk of surgical errors",
+        "Less damage to surrounding healthy tissues"
+      ],
+      "url": "https://amicarehospital.in/robotic-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "slug": "total-knee-replacement-surgery-in-ghaziabad",
+      "title": "Knee Replacement Surgery",
+      "summaryHtml": "<p>Living with chronic knee pain can make daily activities like walking, climbing stairs, or standing for long hours difficult. For patients with severe arthritis or knee damage, total knee replacement surgery is often the best solution when other treatments no longer help. As the best hospital for total knee replacement in Ghaziabad, Amicare Hospital provides both traditional and<a href=\"https://amicarehospital.in/robotic-knee-replacement-surgery-in-ghaziabad/\"> robotic TKR surgery</a>. These advanced techniques ensure precise implant placement, reduced pain, and quicker recovery, helping patients return to normal life faster. With experienced surgeons and modern facilities, Amicare is trusted for affordable knee replacement surgery in Ghaziabad. From consultation to rehabilitation, patients receive complete care and long-term relief, making it the preferred choice for TKR surgery.</p><p>Total Knee Replacement (TKR), also known as total knee arthroplasty, is a surgical procedure in<br>which the damaged surfaces of the knee joint are replaced with artificial implants. This<br>procedure is a key solution for patients seeking relief from chronic knee pain and improving<br>knee joint mobility.</p>",
+      "highlights": [
+        "Type of knee replacement (traditional or robotic)",
+        "Implant selection",
+        "Surgeon experience",
+        "Hospital stay and physiotherapy"
+      ],
+      "url": "https://amicarehospital.in/total-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "slug": "hip-replacement-surgery-in-ghaziabad",
+      "title": "Hip Replacement Surgery",
+      "summaryHtml": "<p>Living with chronic hip pain can affect every aspect of your life. Whether it’s difficulty in walking, climbing stairs, or sitting for long hours, <strong><a href=\"https://amicarehospital.in/joint-surgery-in-ghaziabad/\">hip joint damage caused by arthritis</a></strong>, injuries, or fractures can significantly reduce mobility and independence.</p><p>For patients with severe pain that does not improve with medicines, physiotherapy, or lifestyle changes, hip replacement surgery is one of the most effective solutions. It restores movement, relieves pain, and improves quality of life.</p>",
+      "highlights": [
+        "Severe arthritis that causes stiffness and chronic hip pain.",
+        "Hip fractures or injuries that cannot be treated with other methods.",
+        "Joint deformities affect movement and daily activities.",
+        "Constant hip pain unresponsive to medicines, physiotherapy, or lifestyle changes."
+      ],
+      "url": "https://amicarehospital.in/hip-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "slug": "arthro-knee-and-shoulder-treatment",
+      "title": "Arthroscopy Knee and Shoulder Treatment",
+      "summaryHtml": "<p>At Amicare Hospital, Ghaziabad, we offer cutting-edge arthroscopy treatments for both knee and shoulder conditions. Arthroscopy is a minimally invasive surgical technique that allows our orthopedic specialists to diagnose and treat joint problems with precision and minimal discomfort. Whether you’re an athlete recovering from a sports injury or an individual dealing with chronic joint pain, our expert team ensures you get effective, safe, and speedy recovery through arthroscopy.</p><p>With the latest technology, personalized care plans, and a dedicated rehabilitation team, Amicare has become one of the best hospitals in Ghaziabad for arthroscopic knee and shoulder treatment.</p>",
+      "highlights": [
+        "Meniscus tears",
+        "ACL (Anterior Cruciate Ligament) reconstruction",
+        "PCL (Posterior Cruciate Ligament) injuries",
+        "Cartilage damage or wear",
+        "Synovitis (joint lining inflammation)"
+      ],
+      "url": "https://amicarehospital.in/arthro-knee-and-shoulder-treatment/"
+    },
+    {
+      "slug": "acl-surgery-in-delhi-ncr",
+      "title": "ACL Surgery",
+      "summaryHtml": "<p><span>ACL injuries are a common cause of knee instability, pain, and reduced confidence during walking, running, or sports activities. With advances in orthopaedic care, ACL surgery in Delhi NCR has become a reliable and widely chosen option for </span><a href=\"https://amicarehospital.in/robotic-knee-replacement-surgery-in-ghaziabad/\"><b>restoring knee strength</b></a><span>, stability, and long-term joint function.</span></p><p><span>Patients across the Delhi NCR region often explore ACL surgery to understand treatment options, recovery timelines, surgical techniques, and outcomes before making a decision. This page explains what ACL surgery involves, who may need it, available surgical methods, approximate costs, recovery expectations, and how to choose the right hospital and best surgeon for ACL surgery in Delhi NCR.</span></p>",
+      "highlights": [
+        "Arthroscopic (keyhole) knee surgery",
+        "Removal of the damaged ACL",
+        "Graft placement and fixation",
+        "Gradual rehabilitation for strength and mobility"
+      ],
+      "url": "https://amicarehospital.in/acl-surgery-in-delhi-ncr/"
+    },
+    {
+      "slug": "shoulder-care-and-treatment-in-ghaziabad",
+      "title": "Shoulder Care Treatment",
+      "summaryHtml": "<p>Shoulder injuries can significantly impact your daily life by limiting mobility and causing persistent pain. At Amicare Hospital, Ghaziabad, we provide advanced diagnostics, expert orthopedic care, and personalized rehabilitation plans for all types of shoulder injuries. Whether it’s a sports injury, rotator cuff tear, or shoulder dislocation, our team ensures you receive the most effective and minimally invasive treatment possible.</p><p>The shoulder is a complex joint that allows a wide range of motion. Injuries can occur due to trauma, overuse, aging, or degenerative conditions.</p>",
+      "highlights": [
+        "Rotator Cuff Tears : Partial or complete tear of muscles/tendons that stabilize the shoulder.",
+        "Shoulder Dislocation : When the upper arm bone pops out of the shoulder socket.",
+        "Frozen Shoulder (Adhesive Capsulitis) : Stiffness and pain due to inflammation and scar tissue.",
+        "Shoulder Impingement Syndrome : Compression of tendons or bursa leading to pain and reduced mobility.",
+        "Labral Tears : Tear in the cartilage that stabilizes the shoulder joint."
+      ],
+      "url": "https://amicarehospital.in/shoulder-care-and-treatment-in-ghaziabad/"
+    },
+    {
+      "slug": "sports-injury-treatment-in-ghaziabad",
+      "title": "Sports Injury Treatment",
+      "summaryHtml": "<p>At Amicare Hospital, we understand the unique challenges faced by athletes and active individuals. Whether it’s a ligament tear, meniscus injury, or recurring joint pain, our expert team is here to help you recover and return to your peak performance.</p><p>Led by Dr. Himanshu Gupta, a highly regarded Sports Injury Surgeon in Ghaziabad, we provide world-class care using minimally invasive techniques, cutting-edge diagnostics, and personalized rehabilitation plans.</p>",
+      "highlights": [
+        "ACL tears and ligament injuries",
+        "Meniscus tears",
+        "Shoulder dislocations",
+        "Rotator cuff injuries",
+        "Tennis elbow / Golfer’s elbow"
+      ],
+      "url": "https://amicarehospital.in/sports-injury-treatment-in-ghaziabad/"
+    },
+    {
+      "slug": "spine-surgery-in-ghaziabad",
+      "title": "Spine Surgery",
+      "summaryHtml": "<p>At Amicare Hospital, we understand that spine problems like back pain, slip disc, sciatica, and spinal injuries can affect your daily life and mobility. Our dedicated spine care team focuses on accurate diagnosis and personalized treatment. We begin with conservative options such as physiotherapy, medication, and posture correction to relieve pain and restore function. For cases that require surgery, we offer advanced and minimally invasive spine procedures designed for faster recovery and minimal discomfort. Serving patients in Ghaziabad, Noida, and nearby areas, Amicare Hospital is committed to providing safe, effective, and comprehensive spine care for long-term relief.</p><p><strong>Amicare Hospital, Indirapuram, Ghaziabad</strong><br><strong>Call:</strong> +91 9818248928<br><strong>Visit:</strong> https://amicarehospital.in/<br><strong>Email:</strong>&nbsp;<a href=\"https://amicarehospital.in/amicarehospitals@gmail.com\">amicarehospitals@gmail.com</a></p>",
+      "highlights": [
+        "Chronic back, neck, and leg pain",
+        "Herniated disc specialist in Ghaziabad",
+        "Slip disc treatment in Indirapuram",
+        "Sciatica and nerve compression",
+        "Spinal stenosis and instability"
+      ],
+      "url": "https://amicarehospital.in/spine-surgery-in-ghaziabad/"
+    },
+    {
+      "slug": "pediatric-orthopedic-surgery-in-ghaziabad",
+      "title": "Pediatric Orthopedic",
+      "summaryHtml": "<p>Amicare Hospital is a trusted name in pediatric orthopedic care in Ghaziabad, providing comprehensive treatment for children with bone, joint, and musculoskeletal conditions. Children are not just small adults—their bones and joints are still growing and require specialized attention. Our pediatric orthopedic specialists are trained to diagnose and manage a wide range of congenital, developmental, and injury-related conditions unique to children.</p><p>With a child-friendly environment, advanced diagnostics, and minimally invasive treatment options, we ensure the best possible outcomes while prioritizing your child’s comfort and safety.</p>",
+      "highlights": [
+        "Developmental Dysplasia of the Hip (DDH)",
+        "Clubfoot (Talipes Equinovarus)",
+        "Limb length discrepancies",
+        "Scoliosis (curvature of the spine)",
+        "Congenital limb deformities"
+      ],
+      "url": "https://amicarehospital.in/pediatric-orthopedic-surgery-in-ghaziabad/"
+    },
+    {
+      "slug": "orthopaedics-treatment-in-ghaziabad",
+      "title": "Orthopaedic Treatment",
+      "summaryHtml": "<p><span>Amicare Hospital is recognized as one of the best orthopedic hospitals in Ghaziabad, offering advanced and personalized orthopedic treatment for patients of all ages. From knee pain, joint issues, and fractures to complex spine and sports injuries, our team provides comprehensive care using the modern techniques and international treatment standards.</span></p><p><span>Whether you need orthopedic <a href=\"https://amicarehospital.in/knee-replacement-surgery-success-rate/\">treatment for knee pain,</a> management of arthritis, or guidance for a major surgical procedure, our specialists ensure accurate diagnosis, compassionate care, and long-term recovery support.</span></p>",
+      "highlights": [
+        "Osteoarthritis of the knee, hip, and shoulder",
+        "Rheumatoid arthritis",
+        "Frozen shoulder",
+        "Gout and joint inflammation"
+      ],
+      "url": "https://amicarehospital.in/orthopaedics-treatment-in-ghaziabad/"
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dr. Himanshu Gupta",
+      "designation": "Orthopedic Surgeon",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/05/IMG-20250520-WA0031-2-600x600.jpg",
+        "alt": "Dr. Himanshu Gupta",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": "https://amicarehospital.in/dr-himanshu-gupta/"
+    },
+    {
+      "name": "Dr. Gaurav Gupta",
+      "designation": "Child Orthopedic",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/05/IMG-20250520-WA0029-1-600x600.jpg",
+        "alt": "Dr. Gaurav Gupta",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. OP Gupta",
+      "designation": "Pain and Spine Management",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/05/IMG-20250520-WA0033-600x600.jpg",
+        "alt": "Dr. OP Gupta",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Tarun Kumar",
+      "designation": "General Surgeon",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-09-at-5.59.02-PM-1-1.jpeg",
+        "alt": "Dr. Tarun Kumar",
+        "width": 586,
+        "height": 574
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Parul Agrawal",
+      "designation": "Gynaecologist",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-22-at-10.40.44-AM-scaled-600x600.jpeg",
+        "alt": "Dr. Parul Agrawal",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Mayank Rawat",
+      "designation": "Pediatrician",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-22-at-10.34.29-AM-1-e1745301762917-600x600.jpeg",
+        "alt": "Dr. Mayank Rawat",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Lalit Verma",
+      "designation": "Otorhinolaryngologist (ENT)",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/ca0801ad-c925-4553-96b0-0a9efb8e262d-scaled-600x600.jpg",
+        "alt": "Dr. Lalit Verma",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Rajesh Bhagel",
+      "designation": "Internal medicine (Physician)",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/ca0801ad-c925-4553-96b0-0a9efb8e262d-scaled-600x600.jpg",
+        "alt": "Dr. Rajesh Bhagel",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. NK Gupta",
+      "designation": "Internal Medicine (Physician)",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-22-at-10.35.17-AM-scaled-e1745302150168-600x600.jpeg",
+        "alt": "Dr. NK Gupta",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Rinshi Agrawal",
+      "designation": "Internal Medicine (Physician)",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/ca0801ad-c925-4553-96b0-0a9efb8e262d-scaled-600x600.jpg",
+        "alt": "Dr. Rinshi Agrawal",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Mohd Qasim Khan",
+      "designation": "Internal Medicine (Physician)",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/ca0801ad-c925-4553-96b0-0a9efb8e262d-scaled-600x600.jpg",
+        "alt": "Dr. Mohd Qasim Khan",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    },
+    {
+      "name": "Dr. Nividaita",
+      "designation": "Dentist",
+      "photo": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/05/DSC05131-scaled-600x600.jpg",
+        "alt": "Dr. Nividaita",
+        "width": 600,
+        "height": 600
+      },
+      "profileUrl": null
+    }
+  ],
+  "why": {
+    "heading": "Why AmiCare is Your Trusted Healthcare Choice",
+    "paragraphs": [
+      "AMICARE Hospital stands as a beacon of trust and excellence in multi-specialty healthcare. With a mission to deliver worldclass medical services, we combine advanced technology, modern infrastructure, and a team of highly qualified doctors to provide comprehensive care under one roof. From routine check-ups to specialized surgeries, we ensure every patient receives accurate diagnosis, effective treatment, and compassionate care.",
+      "What sets AMICARE apart is our patient-first approach. We prioritize comfort, transparency, and personalized treatment plans to meet individual health needs. Whether it’s a medical emergency, chronic condition, or preventive care, our dedicated staff is committed to supporting patients and their families throughout their healthcare journey."
+    ],
+    "video": {
+      "id": "8wfJ_vZ7diU",
+      "title": "Amicare Hospital | 10 Years of Orthopaedic Excellence & Innovation"
+    },
+    "teamImage": {
+      "src": "https://amicarehospital.in/wp-content/uploads/2025/05/DSC05144-1-scaled-e1750654661143.png",
+      "alt": "Our experienced orthopaedic professionals",
+      "width": 2560,
+      "height": 1148
+    },
+    "reasons": [
+      {
+        "title": "Expert Doctors",
+        "text": "Highly experienced specialists delivering accurate diagnosis and effective treatment."
+      },
+      {
+        "title": "Advanced Technology",
+        "text": "Equipped with modern medical equipment for precise care."
+      },
+      {
+        "title": "Patient-Centric Care",
+        "text": "Compassionate staff focused on your comfort and recovery."
+      }
+    ]
+  },
+  "stories": {
+    "isPatientTestimonials": false,
+    "videos": [
+      {
+        "id": "p6AX3jzWXPc",
+        "title": "Sciatica क्या है? जानिए DR. O.P. Gupta (Spine Specialist) से — AMICARE Hospital"
+      },
+      {
+        "id": "yp2wtnVXqHM",
+        "title": "Khel ke दौरान  ACL Injury se kese bache ? ACL Surgery | Dr Himanshu Gupta Podcast Insights"
+      },
+      {
+        "id": "bwAbv9sPQ-I",
+        "title": "Frozen Shoulder क्या है? कंधे में दर्द और जकड़न के कारण, जानिए इसके खतरनाक असर और बचाव के उपाय!"
+      },
+      {
+        "id": "muGxRjUNSmg",
+        "title": "Partial Knee Replacement के बाद भी कराना पड़ सकता है Total Knee replacement ? | Knee Surgery Noida"
+      }
+    ]
+  },
+  "roboticVideo": {
+    "id": "AWYx9ARAD0Q",
+    "title": "Robotic Knee Replacement Surgery: रोबोटिक घुटना प्रत्यारोपण in Hindi | Knee Replacement in Delhi NCR"
+  },
+  "technology": [
+    {
+      "id": "robotic",
+      "label": "Robotic Joint Replacement",
+      "heading": "What Is Robotic Knee Replacement?",
+      "html": "<div> <p>Robotic knee replacement is a next-generation surgical procedure in which an advanced robotic arm assists the surgeon in placing a knee implant with extraordinary accuracy. Unlike conventional knee replacement, where measurements depend entirely on manual technique, robotic-assisted surgery uses pre-operative 3D imaging and real-time data to guide every cut and placement.</p><p>In a robotic total knee replacement surgery, the robotic system creates a personalised surgical plan based on your unique anatomy. During the operation, the robotic arm helps the surgeon stay within pre-defined boundaries, reducing the risk of errors and ensuring the implant fits perfectly. This results in better alignment, less pain after surgery, and a faster return to normal activities.</p><p>Robotic knee replacement is recommended for patients suffering from severe osteoarthritis, rheumatoid arthritis, post-traumatic arthritis, or significant joint damage that has not responded to conservative treatments.</p> </div>",
+      "sourceUrl": "https://amicarehospital.in/robotic-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "id": "modular-ot",
+      "label": "Modular OT",
+      "heading": "Modular Operation Theatres",
+      "html": "<p>Joint replacement, arthroscopy and spine procedures at AmiCare are performed in modular operation theatres designed for orthopaedic surgery.</p><ul><li>Sealed, easy-to-sterilise modular wall and ceiling panels</li><li>Controlled air handling to lower infection risk</li><li>Integrated support for robotic-assisted joint replacement</li><li>Dedicated recovery area next to the theatre</li></ul>",
+      "sourceUrl": null
+    },
+    {
+      "id": "diagnostics",
+      "label": "Diagnostics",
+      "heading": "Diagnostic Facilities",
+      "html": "<div> <ul> <li> <span>X-Ray – Helps see broken bones and arthritis.</span> </li> <li> <span>CT Scan – Detailed imaging for trauma, fractures, or tumors.</span> </li> <li> <span>MRI – Magnetic scanning for joints, soft tissues, and bone injuries.</span> </li> <li> <span>EMG (Electromyography) – Checks muscle and nerve function to detect nerve damage or weakness.</span> </li> </ul> </div>",
+      "sourceUrl": "https://amicarehospital.in/where-to-find-best-orthopaedic-doctor-hospital-in-ghaziabad/"
+    }
+  ],
+  "articles": [
+    {
+      "id": 19814,
+      "title": "Is Hernia Surgery Dangerous? Risks, Safety & Recovery",
+      "excerpt": "If you’ve just been told you need an operation, the first question on your mind is probably: is hernia surgery dangerous? It’s a completely normal…",
+      "date": "2026-08-11T11:23:12",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/is-hernia-surgery-dangerous-risks-safety-recovery/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/08/young-woman-experiencing-stomach-pain-at-home-2026-03-25-06-56-20-utc-1-768x513.jpg",
+        "alt": "Hernia Surgery Cost in India",
+        "width": 768,
+        "height": 513
+      }
+    },
+    {
+      "id": 19802,
+      "title": "Hernia Surgery Cost in India: Laparoscopic vs Open Surgery",
+      "excerpt": "A hernia occurs when an internal organ or tissue pushes through a weak spot in the surrounding muscle wall. It’s one of the most common reasons…",
+      "date": "2026-08-11T09:42:26",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/hernia-surgery-cost-in-india-laparoscopic-vs-open-surgery/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/08/young-woman-experiencing-stomach-pain-at-home-2026-03-25-06-56-20-utc-1-768x513.jpg",
+        "alt": "Hernia Surgery Cost in India",
+        "width": 768,
+        "height": 513
+      }
+    },
+    {
+      "id": 19785,
+      "title": "Knee Ligaments: Types, Functions, Injuries & Complete Treatment Guide",
+      "excerpt": "Hip pain, an unstable stride, or a knee that seems to cave inward during a squat can often be traced back to one small but critical muscle: the…",
+      "date": "2026-08-06T07:59:03",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/knee-ligaments-types-functions-injuries-complete-treatment-guide/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/08/close-up-of-doctor-holding-knee-joint-model-2026-01-09-10-13-05-utc-768x512.jpg",
+        "alt": "Knee Ligaments",
+        "width": 768,
+        "height": 512
+      }
+    },
+    {
+      "id": 19766,
+      "title": "Gluteus Medius Exercises: Best Moves for Hip Strength",
+      "excerpt": "Hip pain, an unstable stride, or a knee that seems to cave inward during a squat can often be traced back to one small but critical muscle: the…",
+      "date": "2026-07-29T11:27:27",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/gluteus-medius-exercises/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/07/compressed_active-woman-exercising-outdoors-with-resistance-b-2026-03-26-04-42-55-utc.jpg",
+        "alt": "Gluteus Medius Exercises",
+        "width": 486,
+        "height": 324
+      }
+    },
+    {
+      "id": 19758,
+      "title": "Hand Joint Pain: Causes, Symptoms & Treatment",
+      "excerpt": "Hand joint pain can turn even the simplest daily tasks—buttoning a shirt, opening a jar, or typing on a keyboard—into a struggle. Whether it shows…",
+      "date": "2026-07-29T10:38:10",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/hand-joint-pain-causes-symptoms-treatment/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/07/compressed_hand-holding-wrist-in-pain-2026-03-25-02-20-09-utc.jpg",
+        "alt": "Hand Joint Pain",
+        "width": 486,
+        "height": 324
+      }
+    },
+    {
+      "id": 19688,
+      "title": "Lipoma Removal Cost: Surgery Fees, Insurance & Recovery",
+      "excerpt": "A lipoma is one of the most common soft-tissue growths doctors see, and for most people the first real question isn’t “what is it,” it’s “what…",
+      "date": "2026-07-22T07:51:33",
+      "author": "Dr. Himanshu Gupta",
+      "url": "https://amicarehospital.in/lipoma-removal-cost-explained/",
+      "image": {
+        "src": "https://amicarehospital.in/wp-content/uploads/2026/07/compressed_abdomen-with-a-red-stoma-in-surgical-setting-2026-03-20-06-13-10-utc.jpg",
+        "alt": "lipoma removal cost​",
+        "width": 460,
+        "height": 343
+      }
+    }
+  ],
+  "trust": {
+    "text": "CGHS, DGEHS, MCD, Delhi Police, Ayushman Bharat, CAPF, Pandit Deen Dayal, and all major TPAs and Insurance Companies.",
+    "logos": [
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-3-1.jpg",
+        "alt": "PM-JAY",
+        "width": 224,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/images-2.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-4-1.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-3-1.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-4-1.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-5.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-57.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-52.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-6.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/images-2.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-53.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-7.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 224
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-8.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-9.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 200,
+        "height": 200
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-54.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-55.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-12.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-51.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-56.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-49.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-50.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/download-15.jpg",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 225,
+        "height": 225
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-48.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      },
+      {
+        "src": "https://amicarehospital.in/wp-content/uploads/2025/04/Untitled-design-47.png",
+        "alt": "TPAs and Insurance Companies.",
+        "width": 500,
+        "height": 500
+      }
+    ]
+  },
+  "contact": {
+    "phones": [
+      "+91 9650510275",
+      "+91 9818248928"
+    ],
+    "primaryPhone": "+91 9818248928",
+    "whatsapp": "919650510275",
+    "emails": [
+      "amicarehospitals@gmail.com",
+      "amicareappointments@gmail.com"
+    ],
+    "address": "Plot No. 15/16 Nyay Khand-1, Indrapuram, Ghaziabad, Uttar Pradesh 201014",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=Plot%20No.%2015%2F16%20Nyay%20Khand-%201%2C%20Near%20Indrapuram%20Public%20School%2C%20Indrapuram%20Ghaziabad-%20201014.&t=m&z=10&output=embed&iwloc=near"
+  },
+  "keywords": [
+    {
+      "label": "ACL Injury Treatment in Hapur",
+      "url": "https://amicarehospital.in/acl-injury-treatment-in-hapur/"
+    },
+    {
+      "label": "ACL Injury Treatment in Modinagar",
+      "url": "https://amicarehospital.in/acl-injury-treatment-in-modinagar/"
+    },
+    {
+      "label": "Advanced Gastroenterology Hospital in Delhi NCR",
+      "url": "https://amicarehospital.in/gastroenterology-hospital-in-delhi-ncr/"
+    },
+    {
+      "label": "Best Hospital for Robotic Knee Replacement in Delhi NCR",
+      "url": "https://amicarehospital.in/robotic-knee-replacement-in-delhi-ncr/"
+    },
+    {
+      "label": "Pediatric Orthopedic",
+      "url": "https://amicarehospital.in/pediatric-orthopedic-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Orthopaedic Treatment",
+      "url": "https://amicarehospital.in/orthopaedics-treatment-in-ghaziabad/"
+    },
+    {
+      "label": "Arthroscopy Knee and Shoulder Treatment in Ghaziabad",
+      "url": "https://amicarehospital.in/arthro-knee-and-shoulder-treatment/"
+    },
+    {
+      "label": "Shoulder Care Treatment",
+      "url": "https://amicarehospital.in/shoulder-care-and-treatment-in-ghaziabad/"
+    },
+    {
+      "label": "Hip Replacement Surgery",
+      "url": "https://amicarehospital.in/hip-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Knee Replacement Surgery",
+      "url": "https://amicarehospital.in/total-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Robotic Knee Replacement Surgery",
+      "url": "https://amicarehospital.in/robotic-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Best Spine Doctor in Ghaziabad",
+      "url": "https://amicarehospital.in/spine-doctor/"
+    },
+    {
+      "label": "Best Hospital for Robotic Knee Replacement Surgery in Ghaziabad",
+      "url": "https://amicarehospital.in/best-hospital-for-robotic-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Shoulder Surgery in East Delhi",
+      "url": "https://amicarehospital.in/shoulder-surgery-in-east-delhi/"
+    },
+    {
+      "label": "Shoulder Surgery in Vaishali",
+      "url": "https://amicarehospital.in/shoulder-surgery-in-vaishali/"
+    },
+    {
+      "label": "Endoscopic Spine Surgery by Dr. Om Prakash Gupta",
+      "url": "https://amicarehospital.in/endoscopic-spine-surgery-by-dr-om-prakash-gupta/"
+    },
+    {
+      "label": "Shoulder Dislocation Treatment in Ghaziabad",
+      "url": "https://amicarehospital.in/shoulder-dislocation-treatment-in-ghaziabad/"
+    },
+    {
+      "label": "Shoulder Ligament Tear Treatment in Ghaziabad",
+      "url": "https://amicarehospital.in/shoulder-ligament-tear-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Sports Injury Treatment in Ghaziabad",
+      "url": "https://amicarehospital.in/sports-injury-treatment-in-ghaziabad/"
+    },
+    {
+      "label": "Meniscus Tears Surgery in Ghaziabad",
+      "url": "https://amicarehospital.in/meniscus-tears-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Tennis Elbow Treatment in Ghaziabad",
+      "url": "https://amicarehospital.in/tennis-elbow-treatment-in-ghaziabad/"
+    },
+    {
+      "label": "Rotator Cuff Surgery in Indirapuram",
+      "url": "https://amicarehospital.in/rotator-cuff-surgery-in-indirapuram/"
+    },
+    {
+      "label": "Robotic Knee Replacement Under CGHS Empanel",
+      "url": "https://amicarehospital.in/robotic-knee-replacement-under-cghs-empanel/"
+    },
+    {
+      "label": "Best Multispeciality Hospital in Indirapuram",
+      "url": "https://amicarehospital.in/best-multispeciality-hospital-in-indirapuram/"
+    },
+    {
+      "label": "Best Internal Medicine Hospital in Ghaziabad",
+      "url": "https://amicarehospital.in/best-internal-medicine-hospital-in-ghaziabad/"
+    },
+    {
+      "label": "Advanced Gynecological Hospital in Delhi NCR",
+      "url": "https://amicarehospital.in/gynecological-hospital-in-delhi-ncr/"
+    },
+    {
+      "label": "Best General Surgery Hospital in Ghaziabad",
+      "url": "https://amicarehospital.in/general-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Spine Surgery in Ghaziabad",
+      "url": "https://amicarehospital.in/spine-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Hip and Knee Replacement Surgery",
+      "url": "https://amicarehospital.in/hip-and-knee-replacement-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Best Ortho Doctor in Ghaziabad",
+      "url": "https://amicarehospital.in/best-ortho-doctor-in-ghaziabad/"
+    },
+    {
+      "label": "Knee Replacement Surgery in Meerut",
+      "url": "https://amicarehospital.in/knee-replacement-surgery-in-meerut/"
+    },
+    {
+      "label": "Best Joint Surgery Hospital of Ghaziabad",
+      "url": "https://amicarehospital.in/joint-surgery-in-ghaziabad/"
+    },
+    {
+      "label": "Best Hospital of Ghaziabad",
+      "url": "https://amicarehospital.in/where-to-find-best-orthopaedic-doctor-hospital-in-ghaziabad/"
+    },
+    {
+      "label": "ACL Surgery in Ghaziabad",
+      "url": "https://amicarehospital.in/acl-surgery-in-delhi-ncr/"
+    },
+    {
+      "label": "Knee Replacement Surgery in Hapur",
+      "url": "https://amicarehospital.in/knee-replacement-surgery-in-hapur/"
+    }
+  ]
+}

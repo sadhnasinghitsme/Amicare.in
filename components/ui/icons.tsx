@@ -1,0 +1,34 @@
+import {
+  Activity,
+  Ambulance,
+  BadgeCheck,
+  FlaskConical,
+  HeartPulse,
+  MonitorCog,
+  Pill,
+  ScanLine,
+  Siren,
+  type LucideIcon,
+} from "lucide-react";
+import type { FacilityIcon } from "@/lib/site-config";
+
+export const FACILITY_ICONS: Record<FacilityIcon, LucideIcon> = {
+  emergency: Siren,
+  icu: HeartPulse,
+  ot: MonitorCog,
+  xray: ScanLine,
+  lab: FlaskConical,
+  pharmacy: Pill,
+  ambulance: Ambulance,
+  physio: Activity,
+  cghs: BadgeCheck,
+};
+
+/** WhatsApp glyph (not in lucide). */
+export function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M16.04 3C9.4 3 4 8.33 4 14.9c0 2.3.66 4.45 1.8 6.27L4 29l8.06-1.74a12.2 12.2 0 0 0 3.98.66C22.68 27.92 28 22.6 28 16.03 28 9.46 22.68 3 16.04 3Zm0 22.7c-1.3 0-2.56-.25-3.74-.73l-.27-.11-4.78 1.03 1.07-4.6-.18-.29a9.6 9.6 0 0 1-1.56-5.1c0-5.37 4.4-9.74 9.46-9.74 5.3 0 9.72 4.37 9.72 9.87 0 5.35-4.37 9.67-9.72 9.67Zm5.33-7.24c-.29-.15-1.72-.85-1.99-.94-.27-.1-.46-.15-.66.14-.19.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.14-1.23-.45-2.34-1.43-.86-.77-1.45-1.72-1.62-2-.17-.3-.02-.45.13-.6.13-.13.29-.34.44-.51.14-.17.19-.3.29-.49.1-.2.05-.37-.03-.51-.07-.15-.65-1.57-.9-2.15-.23-.56-.47-.49-.65-.5h-.56c-.2 0-.51.08-.78.37-.27.3-1.02 1-1.02 2.42 0 1.43 1.05 2.8 1.2 3 .14.2 2.05 3.13 4.98 4.39.7.3 1.24.48 1.66.61.7.22 1.34.19 1.84.12.56-.08 1.72-.7 1.97-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.56-.34Z" />
+    </svg>
+  );
+}
