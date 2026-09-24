@@ -23,7 +23,16 @@ import {
   sortDoctors,
 } from "./extract";
 import { sanitizeWpHtml, toPlainText } from "./sanitize";
-import { KEYWORD_EXCLUDE_SLUGS, MEDIA_IDS, PAGE_SLUGS, TECH_TABS, TREATMENT_SLUGS, WP_SITE_URL, testimonialVideoIds, whyVideoId } from "./constants";
+import {
+  KEYWORD_EXCLUDE_SLUGS,
+  MEDIA_IDS,
+  PAGE_SLUGS,
+  TECH_TABS,
+  TREATMENT_SLUGS,
+  WP_SITE_URL,
+  testimonialVideoIds,
+  whyVideoId,
+} from "./constants";
 import {
   discoverCustomTypes,
   getCustomItems,
@@ -160,7 +169,9 @@ export const getLandingContent = cache(async (): Promise<LandingContent> => {
   const seoHead = await getSeoHead(home, `${WP_SITE_URL}/`);
   const siteName = siteInfo ? toPlainText(siteInfo.name) : fallback.site.name;
   const seo = {
-    title: toPlainText(seoHead?.title) || (siteInfo ? `${siteName} | ${toPlainText(siteInfo.description)}` : fallback.seo.title),
+    title:
+      toPlainText(seoHead?.title) ||
+      (siteInfo ? `${siteName} | ${toPlainText(siteInfo.description)}` : fallback.seo.title),
     description: toPlainText(seoHead?.description) || hero.description || fallback.seo.description,
     ogImage: seoHead?.og_image?.[0]?.url ?? hero.image?.src ?? fallback.seo.ogImage,
   };
@@ -174,7 +185,11 @@ export const getLandingContent = cache(async (): Promise<LandingContent> => {
     doctors: orFallback("doctors", doctors, fallback.doctors),
     why: {
       heading: orFallback("why.heading", extractWhyHeading(homeHtml), fallback.why.heading),
-      paragraphs: orFallback("why.paragraphs", extractParagraphs(aboutHtml, /^about amicare hospital$/i), fallback.why.paragraphs),
+      paragraphs: orFallback(
+        "why.paragraphs",
+        extractParagraphs(aboutHtml, /^about amicare hospital$/i),
+        fallback.why.paragraphs,
+      ),
       video: whyVideos[0] ?? fallback.why.video,
       teamImage: mediaToImage(media.get(MEDIA_IDS.teamCutout), ["full"]) ?? fallback.why.teamImage,
       reasons: orFallback("why.reasons", extractReasons(homeHtml), fallback.why.reasons),

@@ -24,7 +24,11 @@ function subscribe(listener: () => void) {
 }
 
 export function useLeadPopupOpen(): boolean {
-  return useSyncExternalStore(subscribe, () => isOpen, () => false);
+  return useSyncExternalStore(
+    subscribe,
+    () => isOpen,
+    () => false,
+  );
 }
 
 /* ------------------------------------------------ "seen" for this session */

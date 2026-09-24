@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Tabs } from "@/components/ui/Tabs";
 import { WpHtml } from "@/components/ui/WpHtml";
@@ -9,13 +10,7 @@ import { LiteYouTube } from "@/components/ui/LiteYouTube";
 import type { TechTab, VideoItem } from "@/types/wordpress";
 
 /** `videos` maps a tab id to a video shown beside that tab's text. */
-export function Technology({
-  tabs,
-  videos = {},
-}: {
-  tabs: TechTab[];
-  videos?: Record<string, VideoItem | null>;
-}) {
+export function Technology({ tabs, videos = {} }: { tabs: TechTab[]; videos?: Record<string, VideoItem | null> }) {
   return (
     <Section id="technology" aria-labelledby="technology-title" className="bg-surface">
       <Container>
@@ -33,7 +28,7 @@ export function Technology({
               content: (() => {
                 const video = videos[tab.id];
                 return (
-                  <div className="grid gap-8 rounded-3xl bg-white p-6 ring-1 ring-line sm:p-10 lg:grid-cols-[1fr_minmax(0,30rem)] lg:items-center lg:gap-12">
+                  <Card className="grid gap-8 p-6 sm:p-10 lg:grid-cols-[1fr_minmax(0,30rem)] lg:items-center lg:gap-12">
                     <div>
                       <h3 className="text-2xl font-bold text-ink">{tab.heading}</h3>
                       <WpHtml html={tab.html} className="mt-4 max-w-3xl" />
@@ -56,7 +51,7 @@ export function Technology({
                         className="rounded-2xl shadow-xl"
                       />
                     )}
-                  </div>
+                  </Card>
                 );
               })(),
             }))}

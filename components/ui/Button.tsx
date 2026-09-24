@@ -22,6 +22,10 @@ export function buttonClass(variant: ButtonVariant = "primary", className?: stri
 }
 
 /** Link styled as a button (every CTA on the page navigates: anchors, tel:, wa.me). */
-export function Button({ variant = "primary", className, ...props }: ComponentProps<"a"> & { variant?: ButtonVariant }) {
+export function Button({
+  variant = "primary",
+  className,
+  ...props
+}: ComponentProps<"a"> & { variant?: ButtonVariant }) {
   return <a className={buttonClass(variant, className)} {...props} />;
 }

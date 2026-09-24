@@ -7,11 +7,34 @@ import { decode } from "html-entities";
  * iframes, SVG — is dropped so our Tailwind styles control the look.
  */
 const ALLOWED_TAGS = [
-  "p", "br", "strong", "b", "em", "i", "u", "a", "img",
-  "ul", "ol", "li", "blockquote",
-  "h2", "h3", "h4", "h5", "h6",
-  "table", "thead", "tbody", "tr", "th", "td",
-  "div", "span", "figure", "figcaption",
+  "p",
+  "br",
+  "strong",
+  "b",
+  "em",
+  "i",
+  "u",
+  "a",
+  "img",
+  "ul",
+  "ol",
+  "li",
+  "blockquote",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "table",
+  "thead",
+  "tbody",
+  "tr",
+  "th",
+  "td",
+  "div",
+  "span",
+  "figure",
+  "figcaption",
 ];
 const ALLOWED_ATTR = ["href", "src", "alt", "width", "height", "title", "colspan", "rowspan"];
 
@@ -25,7 +48,7 @@ export function sanitizeWpHtml(html: string): string {
   });
   // Drop empty elements (Elementor icon wrappers, blank paragraphs), innermost first.
   let out = clean;
-  for (let prev = ""; prev !== out; ) {
+  for (let prev = ""; prev !== out;) {
     prev = out;
     out = out.replace(/<(p|span|i|b|strong|em|div|li)>(\s|&nbsp;|<br\s*\/?>)*<\/\1>/gi, "");
   }

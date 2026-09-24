@@ -28,9 +28,7 @@ export function LiteYouTube({
   showTitle?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
-  const [thumb, setThumb] = useState(
-    `https://i.ytimg.com/vi/${id}/${highRes ? "maxresdefault" : "hqdefault"}.jpg`,
-  );
+  const [thumb, setThumb] = useState(`https://i.ytimg.com/vi/${id}/${highRes ? "maxresdefault" : "hqdefault"}.jpg`);
 
   return (
     <div className={cn("relative aspect-video overflow-hidden bg-brand-950", className)}>
@@ -57,7 +55,9 @@ export function LiteYouTube({
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             onError={() => setThumb(`https://i.ytimg.com/vi/${id}/hqdefault.jpg`)}
           />
-          {showTitle && <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />}
+          {showTitle && (
+            <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+          )}
           {playButton === "youtube" ? (
             <span className="absolute top-1/2 left-1/2 grid h-12 w-17 -translate-1/2 place-items-center rounded-xl bg-[#e00] text-white shadow-lg transition-transform group-hover:scale-110">
               <Play className="size-6 fill-current" aria-hidden />

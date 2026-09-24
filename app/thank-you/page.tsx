@@ -26,7 +26,14 @@ export default async function ThankYouPage() {
       <header className="border-b border-line bg-white">
         <Container className="flex h-16 items-center">
           <Link href="/">
-            <Image src={BRAND.logo} alt={site.name} width={BRAND.logoWidth} height={BRAND.logoHeight} className="h-10 w-auto" sizes="140px" />
+            <Image
+              src={BRAND.logo}
+              alt={site.name}
+              width={BRAND.logoWidth}
+              height={BRAND.logoHeight}
+              className="h-10 w-auto"
+              sizes="140px"
+            />
           </Link>
         </Container>
       </header>

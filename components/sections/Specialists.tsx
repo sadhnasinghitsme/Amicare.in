@@ -3,6 +3,7 @@ import { CalendarCheck, UserRound } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Slider } from "@/components/ui/Slider";
 import type { Doctor } from "@/types/wordpress";
@@ -20,10 +21,7 @@ export function Specialists({ doctors }: { doctors: Doctor[] }) {
         <div className="mt-10">
           <Slider label="Our specialists" itemClassName="w-[78%] sm:w-[calc(50%-8px)] lg:w-[calc(25%-12px)]">
             {doctors.map((doc) => (
-              <article
-                key={doc.name}
-                className="flex h-full flex-col overflow-hidden rounded-3xl bg-white ring-1 ring-line"
-              >
+              <Card as="article" key={doc.name} className="flex h-full flex-col overflow-hidden">
                 <div className="relative aspect-square bg-brand-50">
                   {doc.photo ? (
                     <Image
@@ -57,7 +55,7 @@ export function Specialists({ doctors }: { doctors: Doctor[] }) {
                     </Button>
                   </div>
                 </div>
-              </article>
+              </Card>
             ))}
           </Slider>
         </div>

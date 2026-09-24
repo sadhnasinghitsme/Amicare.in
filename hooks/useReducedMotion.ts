@@ -12,5 +12,9 @@ function subscribe(onChange: () => void) {
 
 /** True when the visitor asked the OS for reduced motion. Server render assumes true (no animation). */
 export function useReducedMotion(): boolean {
-  return useSyncExternalStore(subscribe, () => window.matchMedia(QUERY).matches, () => true);
+  return useSyncExternalStore(
+    subscribe,
+    () => window.matchMedia(QUERY).matches,
+    () => true,
+  );
 }

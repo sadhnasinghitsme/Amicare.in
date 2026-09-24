@@ -26,12 +26,20 @@ export function SectionHeading({
       )}
       <h2
         id={id}
-        className={cn("mt-2 text-3xl font-bold tracking-tight text-balance sm:text-4xl", dark ? "text-white" : "text-ink")}
+        className={cn(
+          "mt-2 text-3xl font-bold tracking-tight text-balance sm:text-4xl",
+          dark ? "text-white" : "text-ink",
+        )}
       >
         {title}
       </h2>
       {description && (
-        <p className={cn("mt-4 text-base leading-relaxed text-pretty sm:text-lg", dark ? "text-brand-100" : "text-muted")}>
+        <p
+          className={cn(
+            "mt-4 text-base leading-relaxed text-pretty sm:text-lg",
+            dark ? "text-brand-100" : "text-muted",
+          )}
+        >
           {description}
         </p>
       )}

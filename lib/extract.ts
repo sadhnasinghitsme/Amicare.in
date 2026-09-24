@@ -29,7 +29,9 @@ const SMALL_WORDS = new Set(["a", "an", "and", "at", "for", "in", "of", "on", "o
 export function titleCase(s: string): string {
   return s
     .split(" ")
-    .map((w, i) => (i > 0 && SMALL_WORDS.has(w.toLowerCase()) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1)))
+    .map((w, i) =>
+      i > 0 && SMALL_WORDS.has(w.toLowerCase()) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1),
+    )
     .join(" ");
 }
 
@@ -134,9 +136,7 @@ export function extractDoctors(aboutHtml: string): Doctor[] {
 
 /** Lead doctor (Dr. Himanshu Gupta) first; everyone else keeps WP order. */
 export function sortDoctors(doctors: Doctor[]): Doctor[] {
-  return [...doctors].sort(
-    (a, b) => Number(LEAD_DOCTOR_MATCH.test(b.name)) - Number(LEAD_DOCTOR_MATCH.test(a.name)),
-  );
+  return [...doctors].sort((a, b) => Number(LEAD_DOCTOR_MATCH.test(b.name)) - Number(LEAD_DOCTOR_MATCH.test(a.name)));
 }
 
 /* ------------------------------------------------------ sections / intros */
@@ -228,7 +228,10 @@ export function extractHeroVideoId(homeHtml: string): string | null {
 
 export function extractTrust(homeHtml: string): TrustContent | null {
   const root = parse(homeHtml);
-  const heading = root.querySelectorAll("h2, h3, h4, h5, h6").map(text).find((t) => /CGHS/.test(t));
+  const heading = root
+    .querySelectorAll("h2, h3, h4, h5, h6")
+    .map(text)
+    .find((t) => /CGHS/.test(t));
   if (!heading) return null;
   const seen = new Set<string>();
   const logos = root

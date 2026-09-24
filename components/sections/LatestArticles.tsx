@@ -3,6 +3,7 @@ import { ArrowRight, Newspaper } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Card } from "@/components/ui/Card";
 import type { Article } from "@/types/wordpress";
 import { formatDate } from "@/lib/utils";
 
@@ -12,11 +13,7 @@ export function LatestArticles({ articles, blogUrl }: { articles: Article[]; blo
     <Section id="articles" aria-labelledby="articles-title">
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <SectionHeading
-            id="articles-title"
-            eyebrow="Latest Articles"
-            title="Health Tips from AmiCare Experts"
-          />
+          <SectionHeading id="articles-title" eyebrow="Latest Articles" title="Health Tips from AmiCare Experts" />
           <a
             href={blogUrl}
             target="_blank"
@@ -30,7 +27,10 @@ export function LatestArticles({ articles, blogUrl }: { articles: Article[]; blo
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((a) => (
             <li key={a.id}>
-              <article className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white ring-1 ring-line transition-shadow hover:shadow-xl hover:shadow-brand-900/5">
+              <Card
+                as="article"
+                className="group relative flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl hover:shadow-brand-900/5"
+              >
                 <div className="relative aspect-[16/10] bg-brand-50">
                   {a.image ? (
                     <Image
@@ -56,10 +56,11 @@ export function LatestArticles({ articles, blogUrl }: { articles: Article[]; blo
                   </h3>
                   <p className="mt-2 line-clamp-3 text-sm text-muted">{a.excerpt}</p>
                   <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-brand-700">
-                    Read article <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden />
+                    Read article{" "}
+                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden />
                   </span>
                 </div>
-              </article>
+              </Card>
             </li>
           ))}
         </ul>

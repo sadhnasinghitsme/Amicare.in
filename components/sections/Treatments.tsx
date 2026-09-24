@@ -23,25 +23,25 @@ export function Treatments({ treatments, phone }: { treatments: Treatment[]; pho
           <div className="space-y-3">
             {treatments.map((t, i) => (
               <Accordion key={t.slug} name="treatments" title={t.title} defaultOpen={i === 0}>
-                  <WpHtml html={t.summaryHtml} className="text-[15px]" />
-                  {t.highlights.length > 0 && (
-                    <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
-                      {t.highlights.map((h) => (
-                        <li key={h} className="flex gap-2 text-sm text-ink">
-                          <CircleCheck className="mt-0.5 size-4 shrink-0 text-brand-600" aria-hidden />
-                          {h}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <Button href="#enquire">Enquire Now</Button>
-                    <Button href={t.url} variant="outline" target="_blank" rel="noopener">
-                      Read more
-                      <ArrowUpRight className="size-4" aria-hidden />
-                      <span className="sr-only">about {t.title} (opens in a new tab)</span>
-                    </Button>
-                  </div>
+                <WpHtml html={t.summaryHtml} className="text-[15px]" />
+                {t.highlights.length > 0 && (
+                  <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
+                    {t.highlights.map((h) => (
+                      <li key={h} className="flex gap-2 text-sm text-ink">
+                        <CircleCheck className="mt-0.5 size-4 shrink-0 text-brand-600" aria-hidden />
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Button href="#enquire">Enquire Now</Button>
+                  <Button href={t.url} variant="outline" target="_blank" rel="noopener">
+                    Read more
+                    <ArrowUpRight className="size-4" aria-hidden />
+                    <span className="sr-only">about {t.title} (opens in a new tab)</span>
+                  </Button>
+                </div>
               </Accordion>
             ))}
           </div>

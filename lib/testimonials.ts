@@ -23,7 +23,8 @@ function keep(t: Testimonial): boolean {
 function fromCustomType(items: WPCustomItem[]): Testimonial[] {
   return items.map((item) => {
     const acf = item.acf ?? {};
-    const pick = (...keys: string[]) => keys.map((k) => acf[k]).find((v) => typeof v === "string" || typeof v === "number");
+    const pick = (...keys: string[]) =>
+      keys.map((k) => acf[k]).find((v) => typeof v === "string" || typeof v === "number");
     const text = toPlainText(item.content?.rendered || item.excerpt?.rendered);
     const rating = Number(pick("rating", "stars", "star_rating")) || 5;
     const treatment = pick("treatment", "procedure", "designation");
@@ -84,7 +85,13 @@ export function parseReviewWidget(html: string): TestimonialsContent | null {
   const starsValue =
     footerStars.filter((_, s) => /\/f\.svg$/.test($(s).attr("data-imgurl") ?? "")).length +
     footerStars.filter((_, s) => /\/h\.svg$/.test($(s).attr("data-imgurl") ?? "")).length * 0.5;
-  const count = Number(footer.find(".ti-rating-text").text().match(/([\d,]+)\s+Google reviews/i)?.[1]?.replace(/,/g, ""));
+  const count = Number(
+    footer
+      .find(".ti-rating-text")
+      .text()
+      .match(/([\d,]+)\s+Google reviews/i)?.[1]
+      ?.replace(/,/g, ""),
+  );
 
   return {
     items,

@@ -24,7 +24,10 @@ export function Accordion({
     >
       <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold text-ink sm:px-6 sm:text-lg [&::-webkit-details-marker]:hidden">
         <h3>{title}</h3>
-        <ChevronDown className="size-5 shrink-0 text-brand-700 transition-transform group-open:rotate-180" aria-hidden />
+        <ChevronDown
+          className="size-5 shrink-0 text-brand-700 transition-transform group-open:rotate-180"
+          aria-hidden
+        />
       </summary>
       <div className="border-t border-line px-5 pt-4 pb-6 sm:px-6">{children}</div>
     </details>

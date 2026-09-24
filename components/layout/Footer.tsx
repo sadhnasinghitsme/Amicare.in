@@ -11,7 +11,14 @@ export function Footer({ contact, siteName }: { contact: ContactInfo; siteName: 
       <Container className="grid gap-10 py-14 lg:grid-cols-[1fr_1fr_1.3fr]">
         <div>
           <div className="inline-block rounded-2xl bg-white p-3">
-            <Image src={BRAND.logo} alt={siteName} width={BRAND.logoWidth} height={BRAND.logoHeight} className="h-12 w-auto" sizes="140px" />
+            <Image
+              src={BRAND.logo}
+              alt={siteName}
+              width={BRAND.logoWidth}
+              height={BRAND.logoHeight}
+              className="h-12 w-auto"
+              sizes="140px"
+            />
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
             Orthopaedic &amp; robotic joint replacement care in Indirapuram, Ghaziabad.

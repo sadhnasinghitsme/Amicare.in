@@ -51,11 +51,7 @@ export default async function Home() {
       <HospitalJsonLd content={content} />
       <Header phone={contact.primaryPhone} siteName={site.name} />
       <main>
-        <Hero
-          hero={hero}
-          teamImage={content.why.teamImage}
-          treatmentOptions={content.treatments.map((t) => t.title)}
-        />
+        <Hero hero={hero} teamImage={content.why.teamImage} treatmentOptions={content.treatments.map((t) => t.title)} />
         <Treatments treatments={content.treatments} phone={contact.primaryPhone} />
         <Specialists doctors={content.doctors} />
         <WhyAmicare why={content.why} stats={stats} />

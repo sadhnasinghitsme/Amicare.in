@@ -1,12 +1,4 @@
-import type {
-  WPCustomItem,
-  WPMedia,
-  WPPage,
-  WPPost,
-  WPPostType,
-  WPSeoHead,
-  WPSiteInfo,
-} from "@/types/wordpress";
+import type { WPCustomItem, WPMedia, WPPage, WPPost, WPPostType, WPSeoHead, WPSiteInfo } from "@/types/wordpress";
 
 /**
  * Typed helpers for the WordPress REST API.
@@ -18,9 +10,7 @@ import type {
 
 export const REVALIDATE_SECONDS = 3600;
 
-const API_BASE = (
-  process.env.WP_API_URL ?? "https://www.amicarehospital.in/wp-json/wp/v2"
-).replace(/\/+$/, "");
+const API_BASE = (process.env.WP_API_URL ?? "https://www.amicarehospital.in/wp-json/wp/v2").replace(/\/+$/, "");
 
 /** `/wp-json` root, used for the site index and plugin namespaces. */
 const API_ROOT = API_BASE.replace(/\/wp\/v2$/, "");
@@ -45,10 +35,7 @@ async function wpFetch<T>(url: string, opts: FetchOptions = {}): Promise<T | nul
     }
     return (await res.json()) as T;
   } catch (err) {
-    console.error(
-      `[wordpress] request failed — ${url}:`,
-      err instanceof Error ? err.message : err,
-    );
+    console.error(`[wordpress] request failed — ${url}:`, err instanceof Error ? err.message : err);
     return null;
   }
 }
@@ -100,9 +87,7 @@ export async function getMedia(id: number): Promise<WPMedia | null> {
 
 export async function getMediaByIds(ids: number[]): Promise<Map<number, WPMedia>> {
   if (ids.length === 0) return new Map();
-  const media = await wpFetch<WPMedia[]>(
-    api(`/media?include=${ids.join(",")}&per_page=${ids.length}`),
-  );
+  const media = await wpFetch<WPMedia[]>(api(`/media?include=${ids.join(",")}&per_page=${ids.length}`));
   return new Map((media ?? []).map((m) => [m.id, m]));
 }
 
@@ -144,10 +129,8 @@ export async function discoverCustomTypes(): Promise<CustomTypeMap> {
     if (BUILT_IN_TYPES.has(t.slug) || t.rest_namespace !== "wp/v2") continue;
     const key = `${t.slug} ${t.name}`.toLowerCase();
     if (!found.doctors && /doctor|physician|specialist|team/.test(key)) found.doctors = t.rest_base;
-    else if (!found.testimonials && /testimonial|review|stor(y|ies)/.test(key))
-      found.testimonials = t.rest_base;
-    else if (!found.services && /service|treatment|speciali[sz]/.test(key))
-      found.services = t.rest_base;
+    else if (!found.testimonials && /testimonial|review|stor(y|ies)/.test(key)) found.testimonials = t.rest_base;
+    else if (!found.services && /service|treatment|speciali[sz]/.test(key)) found.services = t.rest_base;
   }
   return found;
 }
