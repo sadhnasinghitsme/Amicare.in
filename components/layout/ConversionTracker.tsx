@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
-import { LEAD_SUBMITTED_KEY } from "@/lib/lead-schema";
+import { STORAGE_KEYS } from "@/lib/constants";
+import { pushDataLayer } from "@/lib/utils";
 
 type TrackingWindow = Window & {
-  dataLayer?: Record<string, unknown>[];
   fbq?: (...args: unknown[]) => void;
   gtag?: (...args: unknown[]) => void;
 };
@@ -18,8 +18,8 @@ export function ConversionTracker() {
   useEffect(() => {
     let treatment: string | null = null;
     try {
-      treatment = sessionStorage.getItem(LEAD_SUBMITTED_KEY);
-      sessionStorage.removeItem(LEAD_SUBMITTED_KEY);
+      treatment = sessionStorage.getItem(STORAGE_KEYS.leadSubmitted);
+      sessionStorage.removeItem(STORAGE_KEYS.leadSubmitted);
     } catch {
       return;
     }
@@ -27,7 +27,7 @@ export function ConversionTracker() {
 
     const w = window as TrackingWindow;
     // GTM: trigger your Google Ads conversion tag on this custom event.
-    (w.dataLayer ??= []).push({ event: "lead_submitted", treatment });
+    pushDataLayer({ event: "lead_submitted", treatment });
     w.fbq?.("track", "Lead", { content_name: treatment });
 
     const sendTo = process.env.NEXT_PUBLIC_GOOGLE_ADS_SEND_TO;

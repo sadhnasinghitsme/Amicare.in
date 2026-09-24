@@ -1,8 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
-import { Container, Section, SectionHeading, ButtonLink } from "@/components/ui/primitives";
-import { Tabs } from "@/components/ui/tabs";
-import { WpHtml } from "@/components/ui/wp-html";
-import { LiteYouTube } from "@/components/ui/lite-youtube";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
+import { Tabs } from "@/components/ui/Tabs";
+import { WpHtml } from "@/components/ui/WpHtml";
+import { LiteYouTube } from "@/components/ui/LiteYouTube";
 import type { TechTab, VideoItem } from "@/types/wordpress";
 
 /** `videos` maps a tab id to a video shown beside that tab's text. */
@@ -35,12 +38,12 @@ export function Technology({
                       <h3 className="text-2xl font-bold text-ink">{tab.heading}</h3>
                       <WpHtml html={tab.html} className="mt-4 max-w-3xl" />
                       <div className="mt-8 flex flex-wrap gap-3">
-                        <ButtonLink href="#enquire">Book a Consultation</ButtonLink>
+                        <Button href="#enquire">Book a Consultation</Button>
                         {tab.sourceUrl && (
-                          <ButtonLink href={tab.sourceUrl} variant="outline" target="_blank" rel="noopener">
+                          <Button href={tab.sourceUrl} variant="outline" target="_blank" rel="noopener">
                             Learn more <ArrowUpRight className="size-4" aria-hidden />
                             <span className="sr-only">(opens in a new tab)</span>
-                          </ButtonLink>
+                          </Button>
                         )}
                       </div>
                     </div>

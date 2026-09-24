@@ -157,6 +157,31 @@ export async function getCustomItems(restBase: string, perPage = 50): Promise<WP
   return items ?? [];
 }
 
+/* ------------------------------------------------------- rendered HTML */
+
+/**
+ * Public, fully rendered HTML of a page on the WP site (for content that
+ * plugins render server-side but don't expose in REST, e.g. the Trustindex
+ * Google-reviews widget). The homepage is ~420 KB, under the 2 MB cache cap.
+ */
+export async function getSiteHtml(url: string): Promise<string | null> {
+  try {
+    const res = await fetch(url, {
+      headers: { Accept: "text/html" },
+      next: { revalidate: REVALIDATE_SECONDS },
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (!res.ok) {
+      console.error(`[wordpress] ${res.status} ${res.statusText} — ${url}`);
+      return null;
+    }
+    return await res.text();
+  } catch (err) {
+    console.error(`[wordpress] request failed — ${url}:`, err instanceof Error ? err.message : err);
+    return null;
+  }
+}
+
 /* ------------------------------------------------------------- site/SEO */
 
 export async function getSiteInfo(): Promise<WPSiteInfo | null> {

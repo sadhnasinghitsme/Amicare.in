@@ -1,35 +1,9 @@
 import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { Container } from "@/components/ui/primitives";
-import type { ContactInfo, KeywordLink } from "@/types/wordpress";
+import { Container } from "@/components/ui/Container";
+import type { ContactInfo } from "@/types/wordpress";
+import { BRAND } from "@/lib/constants";
 import { telHref } from "@/lib/utils";
-
-export function KeywordTags({ keywords }: { keywords: KeywordLink[] }) {
-  if (keywords.length === 0) return null;
-  return (
-    <section aria-labelledby="keywords-title" className="bg-white py-14">
-      <Container>
-        <h2 id="keywords-title" className="text-sm font-semibold tracking-wider text-muted uppercase">
-          Popular searches
-        </h2>
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {keywords.map((k) => (
-            <li key={k.url}>
-              <a
-                href={k.url}
-                target="_blank"
-                rel="noopener"
-                className="inline-flex min-h-9 items-center rounded-full bg-surface px-3.5 py-1.5 text-sm text-ink ring-1 ring-line transition-colors hover:bg-brand-50 hover:text-brand-800"
-              >
-                {k.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </Container>
-    </section>
-  );
-}
 
 export function Footer({ contact, siteName }: { contact: ContactInfo; siteName: string }) {
   return (
@@ -37,7 +11,7 @@ export function Footer({ contact, siteName }: { contact: ContactInfo; siteName: 
       <Container className="grid gap-10 py-14 lg:grid-cols-[1fr_1fr_1.3fr]">
         <div>
           <div className="inline-block rounded-2xl bg-white p-3">
-            <Image src="/amicare-logo.png" alt={siteName} width={480} height={175} className="h-12 w-auto" sizes="140px" />
+            <Image src={BRAND.logo} alt={siteName} width={BRAND.logoWidth} height={BRAND.logoHeight} className="h-12 w-auto" sizes="140px" />
           </div>
           <p className="mt-5 max-w-xs text-sm leading-relaxed">
             Orthopaedic &amp; robotic joint replacement care in Indirapuram, Ghaziabad.

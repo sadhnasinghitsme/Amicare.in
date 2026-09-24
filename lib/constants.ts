@@ -1,10 +1,50 @@
 /**
- * Wiring between landing-page sections and WordPress sources.
+ * App-wide constants.
  *
- * Nothing in here is page copy: it only says *where* on the WP site each
- * piece of content lives (slugs, media IDs, headings to extract). Edit the
- * content in WordPress; edit this file only if a source page moves.
+ * Page copy is NOT here: it comes from WordPress. This file only holds brand
+ * assets, lead/tracking settings, and the wiring that says *where* on the WP
+ * site each piece of content lives (slugs, media IDs, headings to extract).
+ *
+ * Phone and WhatsApp numbers are also read from WordPress (Contacts page);
+ * their offline copies live in data/fallback.json → contact.
  */
+
+/* ------------------------------------------------------------------ brand */
+
+export const BRAND = {
+  logo: "/images/amicare-logo.png",
+  logoWidth: 480,
+  logoHeight: 175,
+  /** Browser theme colour = brand-700. */
+  themeColor: "#056a7c",
+  /** Pre-filled WhatsApp message. */
+  whatsappMessage: "Hi, I would like to book an appointment at AmiCare Hospital.",
+} as const;
+
+/* ------------------------------------------------------ leads & tracking */
+
+/** URL parameters captured with every lead (Google/Meta ads attribution). */
+export const TRACKING_PARAMS = [
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_term",
+  "utm_content",
+  "gclid",
+  "fbclid",
+] as const;
+
+export const STORAGE_KEYS = {
+  /** Set on successful submit, consumed on /thank-you (fires the conversion once). */
+  leadSubmitted: "amicare_lead_submitted",
+  /** Popup already shown or lead already sent → no auto-open this session. */
+  popupSeen: "amicare_popup_seen",
+} as const;
+
+/** Fraction of the page scrolled before the lead popup opens by itself. */
+export const AUTO_OPEN_SCROLL_DEPTH = 0.5;
+
+/* ------------------------------------------------------------- WordPress */
 
 export const WP_SITE_URL = "https://amicarehospital.in";
 
@@ -105,6 +145,27 @@ export function whyVideoId(): string {
   const id = process.env.WHY_AMICARE_YOUTUBE_ID?.trim();
   return id && /^[\w-]{11}$/.test(id) ? id : "8wfJ_vZ7diU";
 }
+
+/**
+ * Testimonials: reviews that name other hospital chains are skipped (the
+ * Google listing has a few that praise doctors "at Fortis" etc.), as are
+ * one-liners like "Excellent".
+ */
+export const TESTIMONIAL_EXCLUDE = /\b(fortis|apollo|medanta|manipal|yashoda|max hospital|max super|blk)\b/i;
+export const TESTIMONIAL_MIN_LENGTH = 40;
+
+/** Treatment label shown on a card only when the review text names it. First match wins. */
+export const TESTIMONIAL_TREATMENTS: [RegExp, string][] = [
+  [/robotic/i, "Robotic Joint Replacement"],
+  [/knee replace/i, "Knee Replacement"],
+  [/hip replace/i, "Hip Replacement"],
+  [/\b(spine|spinal|slip ?disc|back pain|sciatica)\b/i, "Spine Care"],
+  [/\b(acl|ligament|menisc|arthroscop)/i, "Arthroscopy / ACL"],
+  [/shoulder/i, "Shoulder Treatment"],
+  [/\b(fracture|trauma)\b/i, "Fracture Care"],
+  [/\b(delivery|pregnan|gyn(a)?ec)/i, "Maternity Care"],
+  [/\bknee\b/i, "Knee Treatment"],
+];
 
 /**
  * Real patient-testimonial YouTube IDs, comma separated. The WP site

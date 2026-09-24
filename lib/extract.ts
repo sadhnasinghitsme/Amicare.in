@@ -13,7 +13,7 @@ import type {
   WPPost,
 } from "@/types/wordpress";
 import { sanitizeWpHtml, toPlainText } from "./sanitize";
-import { LEAD_DOCTOR_MATCH } from "./site-config";
+import { LEAD_DOCTOR_MATCH } from "./constants";
 
 /**
  * Pulls structured data out of the Elementor-rendered HTML that the WP REST

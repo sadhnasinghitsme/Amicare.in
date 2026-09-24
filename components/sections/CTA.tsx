@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Headset, Phone } from "lucide-react";
-import { Container, ButtonLink } from "@/components/ui/primitives";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 import type { ImageData } from "@/types/wordpress";
 import { telHref } from "@/lib/utils";
 
-export function BottomCta({ phone, teamImage }: { phone: string; teamImage: ImageData | null }) {
+export function CTA({ phone, teamImage }: { phone: string; teamImage: ImageData | null }) {
   return (
     <section aria-labelledby="cta-title" className="bg-white pt-16 sm:pt-20">
       <Container>
@@ -20,10 +21,10 @@ export function BottomCta({ phone, teamImage }: { phone: string; teamImage: Imag
               Talk to our care team about your symptoms, treatment options, CGHS or insurance — at no cost.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="#enquire">Request a Call Back</ButtonLink>
-              <ButtonLink href={telHref(phone)} variant="ghostWhite">
+              <Button href="#enquire">Request a Call Back</Button>
+              <Button href={telHref(phone)} variant="ghostWhite">
                 <Phone className="size-4" aria-hidden /> {phone}
-              </ButtonLink>
+              </Button>
             </div>
           </div>
           {teamImage && (

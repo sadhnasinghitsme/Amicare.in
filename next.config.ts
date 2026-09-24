@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
         pathname: "/wp-content/uploads/**",
       })),
       { protocol: "https", hostname: "i.ytimg.com", pathname: "/vi/**" },
+      // Google reviewer avatars (lh3…lh6.googleusercontent.com)
+      { protocol: "https", hostname: "*.googleusercontent.com" },
     ],
     formats: ["image/avif", "image/webp"],
     qualities: [60, 75],

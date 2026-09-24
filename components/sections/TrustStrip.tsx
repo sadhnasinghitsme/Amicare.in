@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BadgeCheck } from "lucide-react";
-import { Container } from "@/components/ui/primitives";
+import { Container } from "@/components/ui/Container";
 import type { TrustContent } from "@/types/wordpress";
 
 export function TrustStrip({ trust }: { trust: TrustContent }) {

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ArrowRight, Newspaper } from "lucide-react";
-import { Container, Section, SectionHeading } from "@/components/ui/primitives";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { Article } from "@/types/wordpress";
 import { formatDate } from "@/lib/utils";
 

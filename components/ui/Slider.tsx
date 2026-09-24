@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
  * Dependency-free carousel: native scroll-snap (swipe on touch devices)
  * plus prev/next buttons. Slides are server-rendered children.
  */
-export function Carousel({
+export function Slider({
   children,
   label,
   itemClassName,

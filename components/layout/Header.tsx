@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Phone } from "lucide-react";
-import { Container } from "@/components/ui/primitives";
+import { Container } from "@/components/ui/Container";
+import { BRAND } from "@/lib/constants";
 import { telHref } from "@/lib/utils";
 
 /** Dark header that blends into the hero: logo left, click-to-call right. */
@@ -17,10 +18,10 @@ export function Header({ phone, siteName }: { phone: string; siteName: string })
           aria-label={`${siteName} — back to top`}
         >
           <Image
-            src="/amicare-logo.png"
+            src={BRAND.logo}
             alt={siteName}
-            width={480}
-            height={175}
+            width={BRAND.logoWidth}
+            height={BRAND.logoHeight}
             loading="eager"
             className="h-9 w-auto md:h-12"
             sizes="(max-width: 768px) 100px, 132px"

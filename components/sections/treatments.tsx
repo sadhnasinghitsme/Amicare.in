@@ -1,6 +1,10 @@
-import { ArrowUpRight, ChevronDown, CircleCheck, Phone } from "lucide-react";
-import { Container, Section, SectionHeading, ButtonLink } from "@/components/ui/primitives";
-import { WpHtml } from "@/components/ui/wp-html";
+import { ArrowUpRight, CircleCheck, Phone } from "lucide-react";
+import { Accordion } from "@/components/ui/Accordion";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
+import { WpHtml } from "@/components/ui/WpHtml";
 import type { Treatment } from "@/types/wordpress";
 import { telHref } from "@/lib/utils";
 
@@ -18,20 +22,7 @@ export function Treatments({ treatments, phone }: { treatments: Treatment[]; pho
         <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_340px] lg:items-start">
           <div className="space-y-3">
             {treatments.map((t, i) => (
-              <details
-                key={t.slug}
-                name="treatments"
-                open={i === 0}
-                className="group rounded-2xl bg-white ring-1 ring-line transition-shadow open:shadow-lg open:shadow-brand-900/5"
-              >
-                <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 text-left text-base font-semibold text-ink sm:px-6 sm:text-lg [&::-webkit-details-marker]:hidden">
-                  <h3>{t.title}</h3>
-                  <ChevronDown
-                    className="size-5 shrink-0 text-brand-700 transition-transform group-open:rotate-180"
-                    aria-hidden
-                  />
-                </summary>
-                <div className="border-t border-line px-5 pt-4 pb-6 sm:px-6">
+              <Accordion key={t.slug} name="treatments" title={t.title} defaultOpen={i === 0}>
                   <WpHtml html={t.summaryHtml} className="text-[15px]" />
                   {t.highlights.length > 0 && (
                     <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
@@ -44,15 +35,14 @@ export function Treatments({ treatments, phone }: { treatments: Treatment[]; pho
                     </ul>
                   )}
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <ButtonLink href="#enquire">Enquire Now</ButtonLink>
-                    <ButtonLink href={t.url} variant="outline" target="_blank" rel="noopener">
+                    <Button href="#enquire">Enquire Now</Button>
+                    <Button href={t.url} variant="outline" target="_blank" rel="noopener">
                       Read more
                       <ArrowUpRight className="size-4" aria-hidden />
                       <span className="sr-only">about {t.title} (opens in a new tab)</span>
-                    </ButtonLink>
+                    </Button>
                   </div>
-                </div>
-              </details>
+              </Accordion>
             ))}
           </div>
 
@@ -63,12 +53,12 @@ export function Treatments({ treatments, phone }: { treatments: Treatment[]; pho
               specialist.
             </p>
             <div className="mt-6 flex flex-col gap-3">
-              <ButtonLink href={telHref(phone)} variant="white">
+              <Button href={telHref(phone)} variant="white">
                 <Phone className="size-4" aria-hidden /> {phone}
-              </ButtonLink>
-              <ButtonLink href="#enquire" variant="ghostWhite">
+              </Button>
+              <Button href="#enquire" variant="ghostWhite">
                 Request a Call Back
-              </ButtonLink>
+              </Button>
             </div>
           </aside>
         </div>

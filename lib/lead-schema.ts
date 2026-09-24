@@ -23,19 +23,3 @@ export const leadSchema = z.object({
 
 export type LeadInput = z.input<typeof leadSchema>;
 export type Lead = z.output<typeof leadSchema>;
-
-export const TRACKING_PARAMS = [
-  "utm_source",
-  "utm_medium",
-  "utm_campaign",
-  "utm_term",
-  "utm_content",
-  "gclid",
-  "fbclid",
-] as const;
-
-/** sessionStorage key: set on successful submit, consumed on /thank-you. */
-export const LEAD_SUBMITTED_KEY = "amicare_lead_submitted";
-
-/** sessionStorage key: lead popup already shown or lead already sent — no auto-open. */
-export const POPUP_SEEN_KEY = "amicare_popup_seen";

@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { CalendarCheck, UserRound } from "lucide-react";
-import { Container, Section, SectionHeading, ButtonLink } from "@/components/ui/primitives";
-import { Carousel } from "@/components/ui/carousel";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
+import { Slider } from "@/components/ui/Slider";
 import type { Doctor } from "@/types/wordpress";
 
 export function Specialists({ doctors }: { doctors: Doctor[] }) {
@@ -15,7 +18,7 @@ export function Specialists({ doctors }: { doctors: Doctor[] }) {
           description="Experienced surgeons and physicians working together under one roof."
         />
         <div className="mt-10">
-          <Carousel label="Our specialists" itemClassName="w-[78%] sm:w-[calc(50%-8px)] lg:w-[calc(25%-12px)]">
+          <Slider label="Our specialists" itemClassName="w-[78%] sm:w-[calc(50%-8px)] lg:w-[calc(25%-12px)]">
             {doctors.map((doc) => (
               <article
                 key={doc.name}
@@ -48,15 +51,15 @@ export function Specialists({ doctors }: { doctors: Doctor[] }) {
                     </a>
                   )}
                   <div className="mt-auto pt-5">
-                    <ButtonLink href="#enquire" className="w-full">
+                    <Button href="#enquire" className="w-full">
                       <CalendarCheck className="size-4" aria-hidden />
                       Book Appointment
-                    </ButtonLink>
+                    </Button>
                   </div>
                 </div>
               </article>
             ))}
-          </Carousel>
+          </Slider>
         </div>
       </Container>
     </Section>

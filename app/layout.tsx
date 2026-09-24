@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { Analytics, AnalyticsNoScript } from "@/components/ui/analytics";
+import { Analytics } from "@/components/layout/Analytics";
+import { AnalyticsNoScript } from "@/components/layout/AnalyticsNoScript";
+import { BRAND } from "@/lib/constants";
 import { SITE_URL } from "@/lib/utils";
 import "./globals.css";
 
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#056a7c",
+  themeColor: BRAND.themeColor,
   width: "device-width",
   initialScale: 1,
 };

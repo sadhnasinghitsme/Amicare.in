@@ -1,0 +1,56 @@
+{
+  "items": [
+    {
+      "name": "Shubham Kotnala",
+      "text": "My mother recently underwent bilateral knee replacement surgery at Amicare Hospital, Ghaziabad, and our overall experience was excellent. The staff behavior was extremely good, polite, and supportive throughout the entire process. I would especially like to mention Pushpa and Aparna — they were always available to help, very professional, calm, and genuinely caring. Their support made a huge difference during our hospital stay. The hospital staff as a whole was very attentive, well-coordinated, and highly professional in their work. From admission to post-surgery care, everything was handled smoothly and with great attention to detail. We felt reassured and well taken care of at every step. I would definitely recommend Amicare Hospital to anyone looking for quality orthopedic care and compassionate service.",
+      "rating": 5,
+      "treatment": "Knee Replacement",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjW8Ud75ulvL9PIsumSj23IAVED-AMCOYbUHtP8QbN9zZuCOwOvR=w96-h96-c-rp-mo-ba2-br100",
+      "source": "google"
+    },
+    {
+      "name": "Haripriya Shukla",
+      "text": "Mere es hospital ka experience best raha. Meri first delivery me mujhe mere bache ko dekhane ko nhi mila tha. Par yeha mujhe bache dekhne ko mila .yeha ka staf ki service good. Time to time nurse ka or pura staf ki service good thi.",
+      "rating": 5,
+      "treatment": "Maternity Care",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocI8q2xexSRPk7eyjO7cIJ30ix7Xpjafl2KuJpLnW2SuT7HfmA=w96-h96-c-rp-mo-br100",
+      "source": "google"
+    },
+    {
+      "name": "Abhishek Kotnala",
+      "text": "Heartfelt thanks to Dr. Himanshu Gupta for the successful total knee replacement of my mother. Excellent treatment, caring staff, and smooth recovery. Highly recommended. appreciate the excellent treatment and care provided by the hospital staff. The doctors, nurses, and support team were very professional, kind, and attentive throughout my treatment. I felt safe and well cared for. Thank you for your dedication",
+      "rating": 5,
+      "treatment": "Knee Replacement",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVnwIQVWrHcpch5qzhtd1jOA0lxaO0dtEBJ4G7BqfTc-4vIFu8zBg=w96-h96-c-rp-mo-br100",
+      "source": "google"
+    },
+    {
+      "name": "Laxmi Agriculture",
+      "text": "I am Dinesh Gupta from Achalganj distt Unnao my wife pushpa Gupta age 69 complete both knees replacement.from amicare hospital Dr Himanshu Gupta good operation have completed 500 knee replacement and 5000 approx orthopedic surgery done ✅ He is the master of Orthopaedic surgeons I highly recommend everyone very supportive here",
+      "rating": 5,
+      "treatment": "Knee Replacement",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVY9KeQm4fHbSgyN2f61Jivpwp9dBJx1vlI6cJwYjJLoPuUYg=w96-h96-c-rp-mo-ba3-br100",
+      "source": "google"
+    },
+    {
+      "name": "Dev Lamba",
+      "text": "Dr. Ravi Shankar is an excellent spinal surgeon. He explains everything clearly, is very patient, and truly cares about his patients. My surgery and recovery went smoothly because of his expertise. Highly recommended!",
+      "rating": 5,
+      "treatment": "Spine Care",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocK9xbs-vJXsUYifcFukXDwO3no1ilWLEJuxOCpaw1tIhqmQgVfw=w96-h96-c-rp-mo-br100",
+      "source": "google"
+    },
+    {
+      "name": "Sourav Sharma",
+      "text": "I came here for my knee injury, overall Dr Debashish took good care and with his precise treatment I am totally fit now. So must recommended.",
+      "rating": 5,
+      "treatment": "Knee Treatment",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWKS5m5jJNnkKeDx6XzAB4h4imK-ST2cT7t-rONPP-0-a8B9EQ=w96-h96-c-rp-mo-br100",
+      "source": "google"
+    }
+  ],
+  "google": {
+    "stars": 4.5,
+    "reviewCount": 816
+  }
+}

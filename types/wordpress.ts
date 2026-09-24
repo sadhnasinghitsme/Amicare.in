@@ -141,6 +141,23 @@ export interface StoriesContent {
   videos: VideoItem[];
 }
 
+export interface Testimonial {
+  name: string;
+  text: string;
+  /** 1–5 */
+  rating: number;
+  /** Only set when the review itself names the treatment. */
+  treatment: string | null;
+  photo: string | null;
+  source: "google" | "wordpress";
+}
+
+export interface TestimonialsContent {
+  items: Testimonial[];
+  /** Overall Google rating shown in the widget (stars rounded to halves). */
+  google: { stars: number; reviewCount: number } | null;
+}
+
 export interface TechTab {
   id: string;
   label: string;

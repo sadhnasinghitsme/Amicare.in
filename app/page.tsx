@@ -1,18 +1,21 @@
 import type { Metadata } from "next";
 import { getLandingContent } from "@/lib/content";
-import { Header } from "@/components/sections/header";
-import { Hero } from "@/components/sections/hero";
-import { Treatments } from "@/components/sections/treatments";
-import { Specialists } from "@/components/sections/specialists";
-import { WhyAmicare } from "@/components/sections/why-amicare";
-import { PatientStories } from "@/components/sections/patient-stories";
-import { Technology } from "@/components/sections/technology";
-import { LatestArticles } from "@/components/sections/latest-articles";
-import { TrustStrip } from "@/components/sections/trust-strip";
-import { BottomCta } from "@/components/sections/bottom-cta";
-import { Footer, KeywordTags } from "@/components/sections/footer";
-import { FloatingActions } from "@/components/sections/floating-actions";
-import { HospitalJsonLd } from "@/components/ui/json-ld";
+import { Header } from "@/components/layout/Header";
+import { Hero } from "@/components/sections/Hero";
+import { Treatments } from "@/components/sections/Treatments";
+import { Specialists } from "@/components/sections/Specialists";
+import { WhyAmicare } from "@/components/sections/WhyAmicare";
+import { Videos } from "@/components/sections/Videos";
+import { Technology } from "@/components/sections/Technology";
+import { Testimonials } from "@/components/sections/Testimonials";
+import { LatestArticles } from "@/components/sections/LatestArticles";
+import { TrustStrip } from "@/components/sections/TrustStrip";
+import { CTA } from "@/components/sections/CTA";
+import { Footer } from "@/components/layout/Footer";
+import { KeywordTags } from "@/components/sections/KeywordTags";
+import { FloatingCTA } from "@/components/layout/FloatingCTA";
+import { LeadPopup } from "@/components/forms/LeadPopup";
+import { HospitalJsonLd } from "@/components/layout/HospitalJsonLd";
 
 // ISR: rebuild the page from WordPress at most once an hour.
 export const revalidate = 3600;
@@ -56,19 +59,17 @@ export default async function Home() {
         <Treatments treatments={content.treatments} phone={contact.primaryPhone} />
         <Specialists doctors={content.doctors} />
         <WhyAmicare why={content.why} stats={stats} />
-        <PatientStories stories={content.stories} />
+        <Videos stories={content.stories} />
+        <Testimonials />
         <Technology tabs={content.technology} videos={{ robotic: content.roboticVideo }} />
         <LatestArticles articles={content.articles} blogUrl={`${site.url}/our-blogs/`} />
         <TrustStrip trust={content.trust} />
-        <BottomCta phone={contact.primaryPhone} teamImage={content.why.teamImage} />
+        <CTA phone={contact.primaryPhone} teamImage={content.why.teamImage} />
         <KeywordTags keywords={content.keywords} />
       </main>
       <Footer contact={contact} siteName={site.name} />
-      <FloatingActions
-        phone={contact.primaryPhone}
-        whatsapp={contact.whatsapp}
-        treatments={content.treatments.map((t) => t.title)}
-      />
+      <FloatingCTA phone={contact.primaryPhone} whatsapp={contact.whatsapp} />
+      <LeadPopup treatments={content.treatments.map((t) => t.title)} />
     </>
   );
 }

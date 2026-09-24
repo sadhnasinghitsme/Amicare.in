@@ -1,9 +1,34 @@
-import { CircleCheck } from "lucide-react";
-import { Container, Section, SectionHeading } from "@/components/ui/primitives";
-import { FACILITY_ICONS } from "@/components/ui/icons";
-import { LiteYouTube } from "@/components/ui/lite-youtube";
-import { FACILITIES } from "@/lib/site-config";
+import {
+  Activity,
+  Ambulance,
+  BadgeCheck,
+  CircleCheck,
+  FlaskConical,
+  HeartPulse,
+  MonitorCog,
+  Pill,
+  ScanLine,
+  Siren,
+  type LucideIcon,
+} from "lucide-react";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { LiteYouTube } from "@/components/ui/LiteYouTube";
+import { FACILITIES, type FacilityIcon } from "@/lib/constants";
 import type { Stat, WhyContent } from "@/types/wordpress";
+
+const FACILITY_ICONS: Record<FacilityIcon, LucideIcon> = {
+  emergency: Siren,
+  icu: HeartPulse,
+  ot: MonitorCog,
+  xray: ScanLine,
+  lab: FlaskConical,
+  pharmacy: Pill,
+  ambulance: Ambulance,
+  physio: Activity,
+  cghs: BadgeCheck,
+};
 
 export function WhyAmicare({ why, stats }: { why: WhyContent; stats: Stat[] }) {
   return (

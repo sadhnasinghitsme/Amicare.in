@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ChevronDown, Info, LoaderCircle } from "lucide-react";
-import { LEAD_SUBMITTED_KEY, POPUP_SEEN_KEY, TRACKING_PARAMS, leadSchema, type Lead, type LeadInput } from "@/lib/lead-schema";
+import { STORAGE_KEYS, TRACKING_PARAMS } from "@/lib/constants";
+import { leadSchema, type Lead, type LeadInput } from "@/lib/lead-schema";
 import { cn } from "@/lib/utils";
 
 function readTracking(): Record<string, string> {
@@ -64,8 +65,8 @@ export function LeadForm({
       const body = (await res.json().catch(() => ({}))) as { error?: string };
       if (!res.ok) throw new Error(body.error ?? "Something went wrong. Please call us instead.");
       try {
-        sessionStorage.setItem(LEAD_SUBMITTED_KEY, data.treatment);
-        sessionStorage.setItem(POPUP_SEEN_KEY, "1"); // no auto-popup after a lead
+        sessionStorage.setItem(STORAGE_KEYS.leadSubmitted, data.treatment);
+        sessionStorage.setItem(STORAGE_KEYS.popupSeen, "1"); // no auto-popup after a lead
       } catch {
         /* storage blocked — conversion will still be tracked by page view */
       }

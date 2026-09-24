@@ -1,8 +1,10 @@
-import { Container, Section, SectionHeading } from "@/components/ui/primitives";
-import { LiteYouTube } from "@/components/ui/lite-youtube";
+import { Container } from "@/components/ui/Container";
+import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { LiteYouTube } from "@/components/ui/LiteYouTube";
 import type { StoriesContent } from "@/types/wordpress";
 
-export function PatientStories({ stories }: { stories: StoriesContent }) {
+export function Videos({ stories }: { stories: StoriesContent }) {
   const videos = stories.videos.slice(0, 4);
   if (videos.length === 0) return null;
 

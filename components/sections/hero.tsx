@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CircleCheck } from "lucide-react";
-import { Container } from "@/components/ui/primitives";
-import { LeadForm } from "@/components/ui/lead-form";
+import { Container } from "@/components/ui/Container";
+import { LeadForm } from "@/components/forms/LeadForm";
 import type { HeroContent, ImageData } from "@/types/wordpress";
 
 export function Hero({

@@ -1,29 +1,3 @@
-import {
-  Activity,
-  Ambulance,
-  BadgeCheck,
-  FlaskConical,
-  HeartPulse,
-  MonitorCog,
-  Pill,
-  ScanLine,
-  Siren,
-  type LucideIcon,
-} from "lucide-react";
-import type { FacilityIcon } from "@/lib/site-config";
-
-export const FACILITY_ICONS: Record<FacilityIcon, LucideIcon> = {
-  emergency: Siren,
-  icu: HeartPulse,
-  ot: MonitorCog,
-  xray: ScanLine,
-  lab: FlaskConical,
-  pharmacy: Pill,
-  ambulance: Ambulance,
-  physio: Activity,
-  cghs: BadgeCheck,
-};
-
 /** WhatsApp glyph (not in lucide). */
 export function WhatsAppIcon({ className }: { className?: string }) {
   return (

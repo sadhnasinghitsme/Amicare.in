@@ -23,16 +23,7 @@ import {
   sortDoctors,
 } from "./extract";
 import { sanitizeWpHtml, toPlainText } from "./sanitize";
-import {
-  KEYWORD_EXCLUDE_SLUGS,
-  MEDIA_IDS,
-  PAGE_SLUGS,
-  TECH_TABS,
-  TREATMENT_SLUGS,
-  WP_SITE_URL,
-  testimonialVideoIds,
-  whyVideoId,
-} from "./site-config";
+import { KEYWORD_EXCLUDE_SLUGS, MEDIA_IDS, PAGE_SLUGS, TECH_TABS, TREATMENT_SLUGS, WP_SITE_URL, testimonialVideoIds, whyVideoId } from "./constants";
 import {
   discoverCustomTypes,
   getCustomItems,

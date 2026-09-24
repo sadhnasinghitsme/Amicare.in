@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CircleCheckBig, Phone } from "lucide-react";
-import { ButtonLink, Container } from "@/components/ui/primitives";
-import { ConversionTracker } from "@/components/ui/conversion-tracker";
-import { WhatsAppIcon } from "@/components/ui/icons";
+import { Button } from "@/components/ui/Button";
+import { Container } from "@/components/ui/Container";
+import { ConversionTracker } from "@/components/layout/ConversionTracker";
+import { WhatsAppIcon } from "@/components/ui/WhatsAppIcon";
 import { getLandingContent } from "@/lib/content";
+import { BRAND } from "@/lib/constants";
 import { telHref, whatsappHref } from "@/lib/utils";
 
 export const revalidate = 3600;
@@ -24,7 +26,7 @@ export default async function ThankYouPage() {
       <header className="border-b border-line bg-white">
         <Container className="flex h-16 items-center">
           <Link href="/">
-            <Image src="/amicare-logo.png" alt={site.name} width={480} height={175} className="h-10 w-auto" sizes="140px" />
+            <Image src={BRAND.logo} alt={site.name} width={BRAND.logoWidth} height={BRAND.logoHeight} className="h-10 w-auto" sizes="140px" />
           </Link>
         </Container>
       </header>
@@ -39,12 +41,12 @@ export default async function ThankYouPage() {
           </p>
           <p className="mt-6 text-sm text-muted">Need help right away?</p>
           <div className="mt-3 flex flex-col justify-center gap-3 sm:flex-row">
-            <ButtonLink href={telHref(contact.primaryPhone)} variant="secondary">
+            <Button href={telHref(contact.primaryPhone)} variant="secondary">
               <Phone className="size-4" aria-hidden /> {contact.primaryPhone}
-            </ButtonLink>
-            <ButtonLink href={whatsappHref(contact.whatsapp)} variant="outline" target="_blank" rel="noopener">
+            </Button>
+            <Button href={whatsappHref(contact.whatsapp)} variant="outline" target="_blank" rel="noopener">
               <WhatsAppIcon className="size-5" /> WhatsApp us
-            </ButtonLink>
+            </Button>
           </div>
           <Link href="/" className="mt-8 inline-block text-sm font-medium text-brand-700 hover:underline">
             ← Back to home

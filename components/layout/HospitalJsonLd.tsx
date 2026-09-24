@@ -1,4 +1,5 @@
 import type { LandingContent } from "@/types/wordpress";
+import { BRAND } from "@/lib/constants";
 import { SITE_URL } from "@/lib/utils";
 
 /** schema.org Hospital (a MedicalOrganization subtype) for rich results. */
@@ -16,7 +17,7 @@ export function HospitalJsonLd({ content }: { content: LandingContent }) {
     name: site.name,
     url: SITE_URL,
     sameAs: [site.url],
-    logo: `${SITE_URL}/amicare-logo.png`,
+    logo: `${SITE_URL}${BRAND.logo}`,
     image: hero.image?.src,
     description: hero.description,
     telephone: contact.primaryPhone.replace(/\s/g, ""),
